@@ -24,7 +24,6 @@ switch ($method) {
         // $data = json_decode(file_get_contents('php://input'), true);
         // echo (json_encode($data));
         // $MySQLHandler->update($data, $resource_id);
-
         if ($resource_id) {
             if ($MySQLHandler->search("id", $resource_id)) {
                 $MySQLHandler->connect();
